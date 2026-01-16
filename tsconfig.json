@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    // Environment Settings
+    "target": "ES6",              // JavaScript version Node understands
+    "module": "commonjs",         // Node.js module system
+    "rootDir": "./",              // Where TS files are located
+    "outDir": "./dist",           // Where compiled JS will go
+    "strict": true,               // Strict type checking
+    "esModuleInterop": true,      // Allows import express from "express"
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,         // Skip checking node_modules types
+    "resolveJsonModule": true     // Allows importing JSON files if needed
+  },
+  "include": ["./**/*.ts"],       // Include all TS files in backend
+  "exclude": ["node_modules", "dist"] // Ignore these folders
+}
