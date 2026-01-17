@@ -6,7 +6,7 @@ export interface IntentResult {
 }
 
 export class IntentClassifierService {
-    private readonly endpoint = "http://127.0.0.1:8000/predict-intent";
+    private readonly endpoint = "https://eorix-chatbot-ai-backend-ml.onrender.com/predict-intent";
     private readonly threshold = 0.6;
 
     async classify(text: string): Promise<IntentResult | null> {
